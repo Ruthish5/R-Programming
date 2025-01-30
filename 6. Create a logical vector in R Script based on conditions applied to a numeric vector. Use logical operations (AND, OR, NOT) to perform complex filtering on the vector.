@@ -1,0 +1,23 @@
+numeric_vector <- c(5, 12, 18, 24, 30, 35, 42, 50)
+condition1 <- numeric_vector > 20
+condition2 <- numeric_vector <= 40
+logical_and <- condition1 & condition2
+logical_or <- condition1 | (numeric_vector <= 10)
+logical_not <- !condition1
+filtered_and <- numeric_vector[logical_and]
+filtered_or <- numeric_vector[logical_or]
+filtered_not <- numeric_vector[logical_not]
+cat("Original Numeric Vector:\n")
+print(numeric_vector)
+cat("\nLogical Vector (AND - Greater than 20 AND <= 40):\n")
+print(logical_and)
+cat("\nFiltered Vector (AND - Greater than 20 AND <= 40):\n")
+print(filtered_and)
+cat("\nLogical Vector (OR - Greater than 20 OR <= 10):\n")
+print(logical_or)
+cat("\nFiltered Vector (OR - Greater than 20 OR <= 10):\n")
+print(filtered_or)
+cat("\nLogical Vector (NOT - NOT Greater than 20):\n")
+print(logical_not)
+cat("\nFiltered Vector (NOT - NOT Greater than 20):\n")
+print(filtered_not)
