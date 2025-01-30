@@ -1,0 +1,12 @@
+num1 <- 8
+num2 <- 2
+addition <- num1 + num2
+subtraction <- num1 - num2
+multiplication <- num1 * num2
+division <- num1 / num2
+exponentiation <- num1 ^ num2
+cat("Addition:", addition, "\n")
+cat("Subtraction:", subtraction, "\n")
+cat("Multiplication:", multiplication, "\n")
+cat("Division:", division, "\n")
+cat("Exponentiation:", exponentiation, "\n")
