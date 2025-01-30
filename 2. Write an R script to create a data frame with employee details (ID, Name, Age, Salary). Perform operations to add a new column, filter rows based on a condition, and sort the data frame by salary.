@@ -1,0 +1,17 @@
+employee_data <- data.frame(
+  ID = c(101, 102, 103, 104, 105),
+  Name = c("Alice", "Bob", "Charlie", "David", "Eve"),
+  Age = c(25, 30, 35, 40, 45),
+  Salary = c(50000, 60000, 55000, 65000, 70000)
+)
+employee_data$Department <- c("HR", "Finance", "IT", "Marketing", "Operations")
+high_salary <- subset(employee_data, Salary > 60000)
+sorted_data <- employee_data[order(employee_data$Salary), ]
+cat("Original Data Frame:\n")
+print(employee_data)
+
+cat("\nFiltered Data (Salary > 60000):\n")
+print(high_salary)
+
+cat("\nSorted Data Frame (by Salary):\n")
+print(sorted_data)
