@@ -1,0 +1,22 @@
+numeric_value <- 42.5
+cat("Numeric Value:", numeric_value, "\n")
+integer_value <- 10L
+cat("Integer Value:", integer_value, "\n")
+character_value <- "R Programming"
+cat("Character Value:", character_value, "\n")
+logical_value <- TRUE
+cat("Logical Value:", logical_value, "\n")
+complex_value <- 3 + 4i
+cat("Complex Value:", complex_value, "\n")
+numeric_to_integer <- as.integer(numeric_value)
+cat("\nNumeric to Integer:", numeric_to_integer, "\n")
+integer_to_numeric <- as.numeric(integer_value)
+cat("Integer to Numeric:", integer_to_numeric, "\n")
+logical_to_numeric <- as.numeric(logical_value)
+cat("Logical to Numeric:", logical_to_numeric, "\n")
+character_to_numeric <- as.numeric(character_value)
+cat("Character to Numeric:", character_to_numeric, "\n")
+numeric_to_complex <- as.complex(numeric_value)
+cat("Numeric to Complex:", numeric_to_complex, "\n")
+complex_to_character <- as.character(complex_value)
+cat("Complex to Character:", complex_to_character, "\n")
