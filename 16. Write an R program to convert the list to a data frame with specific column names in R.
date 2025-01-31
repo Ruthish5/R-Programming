@@ -1,0 +1,6 @@
+my_list <- list(Name = c("Alice", "Bob", "Charlie"), 
+                Age = c(25, 30, 35), 
+                Salary = c(50000, 60000, 70000))
+df <- as.data.frame(my_list)
+colnames(df) <- c("Employee_Name", "Employee_Age", "Employee_Salary")
+print(df)
