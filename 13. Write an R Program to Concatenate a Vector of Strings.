@@ -1,0 +1,4 @@
+string_vector <- c("Hello", "world", "this", "is", "R")
+concatenated_string <- paste(string_vector, collapse = " ")
+cat("Concatenated String:\n")
+print(concatenated_string)
