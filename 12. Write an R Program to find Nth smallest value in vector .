@@ -1,0 +1,11 @@
+find_nth_smallest <- function(vec, N) {
+  sorted_vec <- sort(vec)
+  if (N > length(sorted_vec) || N <= 0) {
+    return("Invalid N")
+  }
+  return(sorted_vec[N])
+}
+my_vector <- c(45, 10, 30, 60, 25, 50, 15)
+N <- 3
+nth_smallest_value <- find_nth_smallest(my_vector, N)
+cat("The", N, "th smallest value in the vector is:", nth_smallest_value, "\n")
