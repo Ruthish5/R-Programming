@@ -1,0 +1,20 @@
+calculate_factorial <- function(n) {
+  if (n < 0) {
+    return("Error: Factorial is not defined for negative numbers.")
+  } else if (n == 0) {
+    return(1)
+  } else {
+    factorial_result <- 1
+    for (i in 1:n) {
+      factorial_result <- factorial_result * i
+    }
+    return(factorial_result)
+  }
+}
+num <- 5
+if (is.na(num)) {
+  print("Error: Please enter a valid integer.")
+} else {
+  factorial_value <- calculate_factorial(num)
+  print(paste("Factorial of", num, "is:", factorial_value))
+}
