@@ -1,0 +1,10 @@
+my_vector <- c(10, 20, 30, 40, 50)
+cat("The entire vector:\n")
+print(my_vector)
+first_value <- my_vector[1]   # First element
+third_value <- my_vector[3]   # Third element
+last_value <- my_vector[length(my_vector)]  # Last element
+cat("\nAccessed Values:\n")
+cat("First Value:", first_value, "\n")
+cat("Third Value:", third_value, "\n")
+cat("Last Value:", last_value, "\n")
