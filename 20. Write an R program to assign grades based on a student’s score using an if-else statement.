@@ -1,0 +1,22 @@
+# Function to assign grades based on score
+assign_grade <- function(score) {
+  if (score >= 90) {
+    grade <- "A"
+  } else if (score >= 80) {
+    grade <- "B"
+  } else if (score >= 70) {
+    grade <- "C"
+  } else if (score >= 60) {
+    grade <- "D"
+  } else {
+    grade <- "F"
+  }
+  return(grade)
+}
+
+# Test the function with a sample score
+student_score <- 85  # Change this value to test different scores
+student_grade <- assign_grade(student_score)
+
+# Print the result
+print(paste("Student Score:", student_score, "- Grade:", student_grade))
