@@ -1,0 +1,23 @@
+generate_fibonacci <- function(limit) {
+  if (limit < 1) {
+    print("Error: Please enter a number greater than or equal to 1.")
+    return()
+  }
+  fib_sequence <- c(0, 1)
+  while (TRUE) {
+    next_fib <- sum(tail(fib_sequence, 2))  # Get the sum of last two numbers
+    if (next_fib > limit) {
+      break
+    }
+    fib_sequence <- c(fib_sequence, next_fib)
+  }
+  print("Generated Fibonacci Sequence:")
+  print(fib_sequence)
+  print(paste("Length of the Fibonacci Sequence:", length(fib_sequence)))
+}
+num_limit <- as.integer(readLines(con = "stdin", n = 1))
+if (is.na(num_limit) || num_limit < 1) {
+  print("Error: Please enter a valid positive integer.")
+} else {
+  generate_fibonacci(num_limit)
+}
