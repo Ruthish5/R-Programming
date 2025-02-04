@@ -1,0 +1,17 @@
+vector_list <- list(
+  c(1, 2, 3, 4, 5),
+  c(10, "a", 20, 30),
+  c(5.5, 6.6, NA, 7.7),
+  c("x", "y", "z"),
+  c(100, 200, 300)
+)
+for (i in seq_along(vector_list)) {
+  numeric_vector <- suppressWarnings(as.numeric(vector_list[[i]]))
+  numeric_vector <- numeric_vector[!is.na(numeric_vector)]
+  if (length(numeric_vector) > 0) {
+    mean_value <- mean(numeric_vector)
+    cat("Mean of vector", i, ":", mean_value, "\n")
+  } else {
+    cat("Vector", i, "contains no valid numeric values.\n")
+  }
+}
