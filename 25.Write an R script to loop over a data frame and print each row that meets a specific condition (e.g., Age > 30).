@@ -1,0 +1,7 @@
+details <- data.frame(id = c(10,20,30,40,50),
+                      name = c("Praju","sandy","Prash","Mano","Deenesh"),
+                      age = c(18,35,60,12,90))
+
+age_details <- details[details$age > 30,]
+
+print(age_details)
