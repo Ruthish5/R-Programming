@@ -1,8 +1,0 @@
-arithmetic <- function(a,b){
-  cat("Addition: ",a+b)
-  cat("\nSubraction: ",a-b)
-  cat("\nMultiplication: ",a*b)
-  cat("\nDivision: ",a/b)
-}
-
-arithmetic(19,4)
